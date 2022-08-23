@@ -11,5 +11,5 @@ Activate conda environment
 -`$ source activate env_name`
 
 After execution, you will be in the following path:
-(env_name) root@############:/PATH/TO/WORKING/DIRECTORY#
+`(env_name) root@############:/PATH/TO/WORKING/DIRECTORY#`
 
