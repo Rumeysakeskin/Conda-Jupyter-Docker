@@ -1,5 +1,8 @@
 # Conda-Docker
 
+Conda environments provide a form of isolation: each environment has its own set of C libraries, Python libraries, binaries, and so on. 
+
+
 Build Docker container
 - `$ docker build --no-cache -t deep_learning_docker .`
 
