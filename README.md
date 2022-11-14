@@ -8,7 +8,7 @@ $ ssh -L 2222:localhost:2222 <REMOTE_USER>@<REMOTE_HOST>
 
 #### Go to your docker path
 ```
-$ /PATH/TO/WORKING/DIRECTORY/docker 
+$ /Path/to/working/directory/docker 
 ```
 
 #### Build docker container
@@ -28,7 +28,7 @@ $ source activate env_name
 
 #### After execution, you will be in the following path
 ```
-(env_name) root@############:/PATH/TO/WORKING/DIRECTORY#
+(env_name) root@############:/Path/to/working/directory/#
 ```
 
 #### Launch Jupyter notebook with default port
