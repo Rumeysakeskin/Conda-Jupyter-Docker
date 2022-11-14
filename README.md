@@ -1,8 +1,8 @@
-## Conda-Jupyter-Docker
+### Conda-Jupyter-Docker
 
-- ### How to build your own Docker container from an Anaconda docker image?
-- ### How to create Conda environment from a .yml file in the docker container?
-- ### How to launch Jupyter Notebook from the container?
+- How to build your own Docker container from an Anaconda docker image?
+- How to create Conda environment from a .yml file in the docker container?
+- How to launch Jupyter Notebook from the container?
 
 #### Access the Jupyter notebook from your remote machine over SSH
 ```
