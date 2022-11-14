@@ -1,5 +1,8 @@
-## Conda-Docker
-Conda environments provide a form of isolation: each environment has its own set of C libraries, Python libraries, binaries, and so on. 
+### Conda-Jupyter-Docker
+
+- How to build your own Docker container from an Anaconda docker image?
+- How to create Conda environment from a .yml file in the docker container?
+- How to launch Jupyter Notebook from the container?
 
 #### Access the Jupyter notebook from your remote machine over SSH
 ```
@@ -31,15 +34,13 @@ $ source activate env_name
 (env_name) root@############:/Path/to/working/directory/#
 ```
 
-#### Launch Jupyter notebook with default port
+#### Launch Jupyter notebook with default port from docker container
 ```
 $ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 ```
 
 #### Enter the URL in your local browser 
-Open a browser from your local machine and navigate to
-`http://localhost:2222/tree`
-and enter your token specified in your terminal.
+Open a browser from your local machine and navigate to `http://localhost:2222/tree` and enter your token specified in your terminal.
 
 
 
