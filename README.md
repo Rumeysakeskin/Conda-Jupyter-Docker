@@ -34,7 +34,7 @@ $ source activate env_name
 ```
 (env_name) root@############:/Path/to/working/directory/#
 ```
-#### Add your environment to Jupyter Notebook
+#### Add your environment to the kernel list in jupyter notebook
 ```
 $ python -m ipykernel install --user --name=env_name
 ```
