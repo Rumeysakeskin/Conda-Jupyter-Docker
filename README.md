@@ -1,6 +1,6 @@
 ### Conda-Jupyter-Docker
 
-- How to build own own **docker container** from **Anaconda** docker image?
+- How to build own **docker container** from **Anaconda** docker image?
 - How to create **Conda environment** from a *.yml* file in the docker container?
 - How to add the conda environment to the kernel list in **Jupyter notebook**?
 - How to launch jupyter notebook from the container?
@@ -45,4 +45,4 @@ $ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 ```
 
 #### Enter the URL in your local browser 
-Open a browser from your local machine and navigate to `http://localhost:2222/tree` and enter your token specified in your terminal.
+Open a browser from your local machine and navigate to `http://127.0.0.1:2222/tree` and enter your token specified in your terminal.
