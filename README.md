@@ -1,8 +1,9 @@
 ### Conda-Jupyter-Docker
 
-- How to build your own Docker container from an Anaconda docker image?
-- How to create Conda environment from a .yml file in the docker container?
-- How to launch Jupyter Notebook from the container?
+- How to build your own docker container from an anaconda docker image?
+- How to create conda environment from a .yml file in the docker container?
+- How to install the conda environment to the kernel list in jupyter notebook?
+- How to launch jupyter notebook from the container?
 
 #### Access the Jupyter notebook from your remote machine over SSH
 ```
@@ -29,9 +30,13 @@ $ docker run -it --rm --gpus all -p 2222:8888 -v /PATH/TO/WORKING/DIRECTORY/:/PA
 $ source activate env_name
 ```
 
-#### After execution, you will be in the following path
+#### After executing the above command we will be in the environment
 ```
 (env_name) root@############:/Path/to/working/directory/#
+```
+#### Add your environment to Jupyter Notebook
+```
+$ python -m ipykernel install --user --name=env_name
 ```
 
 #### Launch Jupyter notebook with default port from docker container
