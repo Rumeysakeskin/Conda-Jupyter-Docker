@@ -2,7 +2,7 @@
 
 - How to build your own docker container from an anaconda docker image?
 - How to create conda environment from a .yml file in the docker container?
-- How to install the conda environment to the kernel list in jupyter notebook?
+- How to add the conda environment to the kernel list in jupyter notebook?
 - How to launch jupyter notebook from the container?
 
 #### Access the Jupyter notebook from your remote machine over SSH
