@@ -17,7 +17,7 @@ $ /Path/to/working/directory/docker
 
 #### Create a Dockerfile
 ```
-# **Install anaconda**
+# Install anaconda
 FROM continuumio/anaconda
 
 # Set working directory for the project
