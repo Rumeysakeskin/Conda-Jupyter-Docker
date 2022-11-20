@@ -43,7 +43,7 @@ $ docker build --no-cache -t deep_learning_docker .
 
 #### Run docker container
 ```
-$ docker run -it --rm --gpus all -p 2222:8888 -v /PATH/TO/WORKING/DIRECTORY/:/PATH/TO/WORKING/DIRECTORY/ deep_learning_docker
+$ docker run -it --rm --gpus all -p 2222:8888 -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
 ```
 
 #### Activate conda environment
