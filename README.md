@@ -15,7 +15,7 @@ $ ssh -L 2222:localhost:2222 <REMOTE_USER>@<REMOTE_HOST>
 $ /Path/to/working/directory/docker 
 ```
 
-#### Create a `Dockerfile`
+#### Create a Dockerfile
 ```
 # Install anaconda
 FROM continuumio/anaconda
