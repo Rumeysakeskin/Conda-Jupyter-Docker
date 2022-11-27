@@ -9,6 +9,10 @@
 ```
 $ ssh -L 2222:localhost:2222 <REMOTE_USER>@<REMOTE_HOST>
 ```
+Note: Also you can access to remote machine without jupyter notebook as following:
+```
+$ ssh <REMOTE_USER>@<REMOTE_HOST>
+```
 
 #### Go to your docker path
 ```
@@ -37,6 +41,7 @@ ENV PATH /opt/conda/envs/env_name:$PATH
 ```
 
 #### Build docker container
+Note: No need to rebuild once built!
 ```
 $ docker build --no-cache -t deep_learning_docker .
 ```
@@ -45,6 +50,11 @@ $ docker build --no-cache -t deep_learning_docker .
 ```
 $ docker run -it --rm --gpus all -p 2222:8888 -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
 ```
+Note that:
+`-it` defines interactive terminal
+`--gpus all` allow to use GPUs
+`-p 2222:8888` defines ports
+
 
 #### Activate conda environment
 ```
@@ -56,6 +66,7 @@ $ source activate env_name
 (env_name) root@############:/Path/to/working/directory/#
 ```
 #### Add your environment to the kernel list in jupyter notebook
+Note: No need to reinstall once install!
 ```
 $ python -m ipykernel install --user --name=env_name
 ```
