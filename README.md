@@ -47,8 +47,9 @@ $ docker build --no-cache -t deep_learning_docker .
 ```
 
 #### Run docker container
-`PORT=${2222}`
+
 ```
+$ PORT=${2222}
 $ docker run -it --rm --gpus all -p $PORT:8888 -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
 ```
 Note that:
