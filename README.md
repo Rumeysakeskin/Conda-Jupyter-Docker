@@ -47,13 +47,15 @@ $ docker build --no-cache -t deep_learning_docker .
 ```
 
 #### Run docker container
+`PORT=${2222}`
 ```
-$ docker run -it --rm --gpus all -p 2222:8888 -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
+$ docker run -it --rm --gpus all -p $PORT:8888 -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
 ```
 Note that:
 `-it` defines interactive terminal,
-`--gpus all` allow to use GPUs and
-`-p 2222:8888` defines ports.
+`-v` bind mount a volume,
+`--gpus all` allow all GPU devices to add to the container and
+`-p 2222:8888` publish a container's port(s) to the host.
 
 
 #### Activate conda environment
