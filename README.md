@@ -88,7 +88,8 @@ $ jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 To find hostname:
 ```
 $ hostname -I
+>> HOSTNAME=${127.0.0.1}
 ```
-`HOSTNAME=${127.0.0.1}`
+
 Open a browser from your local machine and navigate to `http://${HOSTNAME}:2222/tree` or `127.0.0.1:2222/?token=${TOKEN}`
  and enter your token specified in your terminal.
