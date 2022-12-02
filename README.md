@@ -69,7 +69,12 @@ $ source activate env_name
 (env_name) root@############:/Path/to/working/directory/#
 ```
 #### Add your environment to the kernel list in jupyter notebook
-Note: No need to reinstall once install!
+If reveive `No module named ipykernel`
+
+```
+$ pip install ipykernel 
+```
+Note: No need to rebuild once built!
 ```
 $ python -m ipykernel install --user --name=env_name
 ```
