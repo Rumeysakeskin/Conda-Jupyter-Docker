@@ -44,8 +44,9 @@ $ docker build --no-cache -t deep_learning_docker .
 #### Run docker container
 
 ```python
-$ PORT=${2222}
-$ docker run -it --rm --gpus all -p $PORT:8888 -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
+$ HOST_PORT=${2222}
+$ CONTAINER_PORT=${8888}
+$ docker run -it --rm --gpus all -p $HOST_PORT:$CONTAINER_PORT -v /Path/to/working/directory/:/Path/to/working/directory/ deep_learning_docker
 ```
 Note that:
 `-it` defines interactive terminal,
